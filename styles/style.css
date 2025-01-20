@@ -18,6 +18,8 @@ body {
   background-color: var(--color-white);
   color: var(--color-black);
   font-weight: 400;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Shared */
@@ -53,6 +55,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   border: none;
+  max-width: fit-content;
 }
 
 /* Navbar */
@@ -98,6 +101,32 @@ body {
   font-size: 1.25rem;
 }
 
+/* Hero */
+.hero {
+  display: flex;
+  gap: 3.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
@@ -116,5 +145,25 @@ body {
     margin: 0;
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--color-orange);
+  }
+
+  .hero {
+    margin: 2rem 0;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .hero-description {
+    font-size: 0.875rem;
+    line-height: 20px;
   }
 }
