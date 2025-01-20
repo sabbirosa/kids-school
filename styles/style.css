@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-sky-blue: #01acfd;
+  --color-orange: #fea301;
+  --color-black: #111111;
+  --color-white: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-weight: 400;
+}
+
+/* Shared */
+.container {
+  margin: 0 8.75rem;
+}
+
+.mobile-visible {
+  display: none;
+}
+
+.orange {
+  color: var(--color-orange);
+}
+
+.sky-blue {
+  color: var(--color-sky-blue);
+}
+
+.dark-turquoise {
+  color: #05d4df;
+}
+
+.majorelle-blue {
+  color: #5d58ef;
+}
+
+.button {
+  background-color: var(--color-black);
+  color: #ffffff;
+  padding: 15px 50px;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25rem 8.75rem;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav-menus ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.25rem;
+}
+
+.nav-menus ul li:first-child {
+  font-weight: 700;
+}
+
+.nav-menus ul li {
+  list-style: none;
+}
+
+.nav-menus ul li a {
+  text-decoration: none;
+}
+
+.nav-button {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.mobile-menu i {
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 0 2rem;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-visible {
+    display: block;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--color-orange);
+  }
+}
