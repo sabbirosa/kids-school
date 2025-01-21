@@ -372,6 +372,12 @@ footer {
   margin-bottom: 2rem;
 }
 
+.about-website {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
 .footer-menu,
 .footer-socials {
   display: flex;
@@ -389,7 +395,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
